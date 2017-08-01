@@ -1,3 +1,3 @@
 # sound_connect
-# seven think
+seven write since 2017.7
 connect people via sound
