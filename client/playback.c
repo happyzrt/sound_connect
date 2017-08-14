@@ -10,21 +10,12 @@
 #include"playback.h"
 
 /*
-    the const playback_api is used for programs(who call the playback interfaces)
-*/
-const playback_api_s playback_api =
-{
-    play,
-    stop,
-    version
-};
-
-/*
     function:play
     decriptions:play audio
 */
 int play()
 {
+    return 0;
 }
 
 /*
@@ -33,6 +24,7 @@ int play()
 */
 int stop()
 {
+    return 0;
 }
 
 /*
@@ -41,4 +33,16 @@ int stop()
 */
 int version()
 {
+    printf("playback api version:0.1\n");
+    return 0;
 }
+
+/*
+    the const playback_api is used for programs(who call the playback interfaces)
+*/
+const playback_api_s playback_api =
+{
+    play,
+    stop,
+    version
+};
