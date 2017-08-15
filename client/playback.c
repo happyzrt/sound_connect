@@ -42,6 +42,7 @@ int version()
 */
 const playback_api_s playback_api =
 {
+    .module = "playback",
     play,
     stop,
     version

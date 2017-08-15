@@ -6,18 +6,20 @@
 #ifdef __cplusplus
 extern "C"{
 #endif
-
 #ifndef playback_h
 #define playback_h
-#endif
+
+#include"alsa/asoundlib.h"
 
 typedef struct
 {
+    const char* module;
     int (*play)();
     int (*stop)();
     int (*version)();
 }playback_api_s;
 
+#endif
 #ifdef __cplusplus
 }
 #endif

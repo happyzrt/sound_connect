@@ -25,7 +25,7 @@ static int playback_test()
     void *so_handle;
     playback_api_s *pb;
     
-    so_handle = dlopen("/home/seven/libplayback.so", RTLD_LAZY);
+    so_handle = dlopen("/home/seven/sound_connect/client/libplayback.so", RTLD_LAZY);
     pb = dlsym(so_handle, "playback_api");
     pb->version();
     pb->play();

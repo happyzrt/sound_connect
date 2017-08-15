@@ -3,7 +3,7 @@
 aim:client
 
 client:client.c playback.c playback.h
-	gcc -c -fpic playback.c
+	gcc -c -fpic playback.c -lasound
 	gcc -shared playback.o -o libplayback.so
 	gcc client.c -o client -ldl
 
