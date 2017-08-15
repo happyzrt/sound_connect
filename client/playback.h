@@ -18,7 +18,6 @@ typedef struct
     int (*stop)();
     int (*version)();
 }playback_api_s;
-
 #endif
 #ifdef __cplusplus
 }
