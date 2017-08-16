@@ -9,3 +9,4 @@ int is_passworld_ok(char *user, char *password);
 int login(char *user, char * password);
 int logout(char *user, char * password);
 int is_login(char *user);
+int get_user_id(char *user);

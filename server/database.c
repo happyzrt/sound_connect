@@ -58,3 +58,12 @@ int is_login(char *user)
 {
 	return 1;
 }
+
+/*
+	function:get_user_id
+	descriptions:get the id of user
+*/
+int get_user_id(char *user)
+{
+	return 1;
+}
