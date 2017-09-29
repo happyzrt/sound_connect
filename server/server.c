@@ -3,10 +3,15 @@
 1:service for user_client
 *******/
 
-#include"communicate.h"
-#include"database.h"
+#include "communicate.h"
+#include "database.h"
+#include <stdio.h>
+#include <sys/socket.h>
+#include <sys/types.h>
+#include <arpa/inet.h>
+#include <errno.h>
 
-static int is_service down();
+static int is_service_down();
 
 /*
 	function:main
@@ -30,7 +35,7 @@ int main(int argc,char* argv[])
     addr_server.sin_family = AF_INET;
     addr_server.sin_addr.s_addr = htonl(INADDR_ANY);
     addr_server.sin_port = htons(7014);
-    bind(socket_server, (struct sockaddr *)addr_server, sizeof(addr_server));
+    bind(socket_server, (struct sockaddr *)&addr_server, sizeof(addr_server));
     
     listen(socket_server, 7);
     while(serving)

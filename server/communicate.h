@@ -3,6 +3,16 @@
 1:interfaces that used for communicating with client
 *******/
 
+#ifndef __COMMUNICATE_H__
+#define __COMMUNICATE_H__
+
+#include <pthread.h>
+#include <sys/socket.h>
+#include <sys/types.h>
+
+#if __cplusplus
+extern "C"{
+#endif
 typedef struct
 {
     int user_id;
@@ -24,4 +34,7 @@ typedef struct
 }communicate_data_s;
 
 int communicate_begin_serve(int socket_connect);
-
+#if __cplusplus
+}
+#endif
+#endif

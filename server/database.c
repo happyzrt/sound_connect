@@ -3,7 +3,7 @@
 1:the file provide interfaces that support data query
 *******/
 
-#include"database.h"
+#include "database.h"
 
 /*
 	function:register
@@ -11,7 +11,7 @@
 */
 int register_new(char *user_new, char* password_new)
 {
-	return 0;s
+	return 0;
 }
 
 /*

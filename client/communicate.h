@@ -5,8 +5,8 @@
 #ifdef __cplusplus
 extern "C"{
 #endif
-#ifndef communicate_h
-#define communicate_h
+#ifndef __COMMUNICATE_H__
+#define __COMMUNICATE_H__
 
 #include<sys/types.h>
 #include<sys/socket.h>
